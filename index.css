@@ -47,6 +47,7 @@ nav{
 		.nav-item a img{
 			width: 10%;
 		}
+ 
 
 .nav-item:hover .nav-submenu {
 	display:block;
@@ -58,12 +59,19 @@ nav{
 }
 
 .nav-submenu-item a {
-	background:orange;
+	background:;
 	display:block;
 	margin:0;
-	padding: 9%;
 	border-radius: 0;
 
+}
+
+.nav-submenu-item a img{
+	width: 50%
+}
+
+.nav-submenu-item:hover a img{
+	width: 60%;
 }
 															/* main menu */
  .achtergrond{
