@@ -39,14 +39,11 @@ nav{
 		text-decoration:none;
 		text-align: center;
 		color:black;
-		/*background-color:rgba(18,18,18,0.5);*/
+		background-color:rgba(18,18,18,0.5);
 		padding: 1.5%;
-		border-radius: 50%;
+		border-radius: 30px;
 	}
 
-		.nav-item a img{
-			width: 10%;
-		}
 
 .nav-item:hover .nav-submenu {
 	display:block;
