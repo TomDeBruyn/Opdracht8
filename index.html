@@ -82,7 +82,7 @@
 	<body>
     <header>
     	
-      <div class="banner">                 
+    <div class="banner">                 
           <!--
         Given a demo 'demos-jquery\full-width-slider.source.html'
         Go through following steps to transform jssor slider compatible with w3c standards and pass html validation.
@@ -90,15 +90,15 @@
         #1. Move styles inside 'head' tag
         #2. Add alt="" for all 'img' tag
         #3. Add 'data-' prefix for all custom attributes. e.g. u="image" -> data-u="image"
-    -->
+        -->
 
-    <!-- it works the same with all jquery version from 1.x to 2.x -->
-    <script type="text/javascript" src="banners/jquery-1.9.1.min.js"></script>
-    <!-- use jssor.slider.mini.js (40KB) instead for release -->
-    <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
-    <script type="text/javascript" src="banners/jssor.js"></script>
-    <script type="text/javascript" src="banners/jssor.slider.js"></script>
-    <script>
+        <!-- it works the same with all jquery version from 1.x to 2.x -->
+        <script type="text/javascript" src="banners/jquery-1.9.1.min.js"></script>
+        <!-- use jssor.slider.mini.js (40KB) instead for release -->
+        <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
+        <script type="text/javascript" src="banners/jssor.js"></script>
+        <script type="text/javascript" src="banners/jssor.slider.js"></script>
+        <script>
         jQuery(document).ready(function ($) {
 
             var _CaptionTransitions = [];
@@ -177,163 +177,185 @@
             $(window).bind("orientationchange", ScaleSlider);
             //responsive code end
         });
-    </script>
-    <!-- Jssor Slider Begin -->
-    <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
-    <div id="slider1_container" style="position: relative; margin: 0 auto;
-        top: 0px; left: 0px; width: 1300px; height: 250px; overflow: hidden;">
-        <!-- Loading Screen -->
-        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
-            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block;
-                top: 0px; left: 0px; width: 100%; height: 100%;">
-            </div>
-            <div style="position: absolute; display: block; background: url(loading.gif) no-repeat center center;
-                top: 0px; left: 0px; width: 100%; height: 100%;">
-            </div>
-        </div>
-        <!-- Slides Container -->
-        <div data-u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px;
-            height: 500px; overflow: hidden;">
+            </script>
+            <!-- Jssor Slider Begin -->
+            <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
+            <div id="slider1_container" style="position: relative; margin: 0 auto;
+                top: 0px; left: 0px; width: 1300px; height: 250px; overflow: hidden;">
+                <!-- Loading Screen -->
+                <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                    <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block;
+                        top: 0px; left: 0px; width: 100%; height: 100%;">
+                    </div>
+                    <div style="position: absolute; display: block; background: url(loading.gif) no-repeat center center;
+                        top: 0px; left: 0px; width: 100%; height: 100%;">
+                    </div>
+                </div>
+                <!-- Slides Container -->
+                <div data-u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px;
+                    height: 250px; overflow: hidden;">
 
-        <!--formaat banner= 1300  x  620px -->
-            <div>
-                <img data-u="image" src="banners/banner_1.jpg" alt="" />
-            </div>
-            <div>
-                <img data-u="image" src="banners/banner_2.jpg" alt="" />
-            </div>
-            <div>
-                <img data-u="image" src="banners/banner_3.jpg" alt="" />
-            </div>
-        </div>
-                
-        <!--#region Bullet Navigator Skin Begin -->
-        <!-- bullet navigator container -->
-        <div data-u="navigator" class="jssorb21">
-            <!-- bullet navigator item prototype -->
-            <div data-u="prototype"></div>
-        </div>
-        <!--#endregion Bullet Navigator Skin End -->
+                <!--formaat banner= 1300  x  250px -->
+                    <div>
+                        <img data-u="image" src="banners/banner_1.jpg" alt="banner_1" />
+                    </div>
+                    <div>
+                        <img data-u="image" src="banners/banner_2.jpg" alt="banner_2" />
+                    </div>
+                    <div>
+                        <img data-u="image" src="banners/banner_3.jpg" alt="banner_3" />
+                    </div>
+                </div>
+                        
+                <!--#region Bullet Navigator Skin Begin -->
+                <!-- bullet navigator container -->
+                <div data-u="navigator" class="jssorb21">
+                    <!-- bullet navigator item prototype -->
+                    <div data-u="prototype"></div>
+                </div>
+                <!--#endregion Bullet Navigator Skin End -->
 
-        <!--#region Arrow Navigator Skin Begin -->
-        <!-- Arrow Left -->
-        <span data-u="arrowleft" class="jssora21l">
-        </span>
-        <!-- Arrow Right -->
-        <span data-u="arrowright" class="jssora21r">
-        </span>
-        <!--#endregion Arrow Navigator Skin End -->
-        <a style="display: none" href="http://www.jssor.com">Bootstrap Slider</a>
+                <!--#region Arrow Navigator Skin Begin -->
+                <!-- Arrow Left -->
+                <span data-u="arrowleft" class="jssora21l">
+                </span>
+                <!-- Arrow Right -->
+                <span data-u="arrowright" class="jssora21r">
+                </span>
+                <!--#endregion Arrow Navigator Skin End -->
+                <a style="display: none" href="http://www.jssor.com">Bootstrap Slider</a>
     </div>
-      </div>
 
       <nav>
           <ul class="nav-list">
 
       <!--home nav-->
             <li class="nav-item">
-              <a href="index.html"><img src="logos/Home.png"></a>
+              <a href="index.html"><img alt="home" src="logos/Home.png"></a>
             </li>
 
         <!--yoga nav-->
             <li class="nav-item">
-              <a href="#"><img src="logos/yoga.png"></a>
+              <a href="#"><img alt="yoga" src="logos/yoga.png"></a>
               <ul class="nav-submenu">
                 <li class="nav-submenu-item">
-                  <a href="pure-yoga.html"><img src="logos/pure_yoga.png"></a>
+                  <a href="pure-yoga.html"><img alt="pure_yoga" src="logos/pure_yoga.png"></a>
                 </li>
                 <li class="nav-submenu-item">
-                  <a href="?=submenu-2"><img src="logos/yin_yoga.png"></a>
+                  <a href="?=submenu-2"><img alt="yin_yoga" src="logos/yin_yoga.png"></a>
                 </li>
                 <li class="nav-submenu-item">
-                  <a href="?=submenu-3"><img src="logos/workshops_yoga.png"></a>
+                  <a href="?=submenu-3"><img alt="workshops_yoga" src="logos/workshops_yoga.png"></a>
                 </li>
               </ul>
             </li>
 
         <!--wellness nav-->
             <li class="nav-item">
-              <a href="#"><img src="logos/welness.png"></a>
+              <a href="#"><img alt="wellness" src="logos/welness.png"></a>
 
               <ul class="nav-submenu">
                 <li class="nav-submenu-item">
-                  <a href="?=submenu-1"><img src="logos/gelaatsverzoging_welness.png"></a>
+                  <a href="?=submenu-1"><img alt="verzorgin_wellness" src="logos/gelaatsverzoging_welness.png"></a>
                 </li>
                 <li class="nav-submenu-item">
-                  <a href="?=submenu-2"><img src="logos/body_welness.png"></a>
+                  <a href="?=submenu-2"><img alt="body_wellness" src="logos/body_welness.png"></a>
                 </li>
                 <li class="nav-submenu-item">
-                  <a href="?=submenu-3"><img src="logos/arrangementen_welness.png"></a>
+                  <a href="?=submenu-3"><img alt="arrangementen_wellness" src="logos/arrangementen_welness.png"></a>
                 </li>
               </ul>
             </li>
 
         <!--contact nav-->
             <li class="nav-item">
-              <a href="#"><img src="logos/contact.png"></a>
+              <a href="#"><img alt="contact" src="logos/contact.png"></a>
             </li>
 
         <!--webshop nav-->
             <li class="nav-item">
-              <a href="http://www.easywebshop.com/pure-essence"><img src="logos/Webshop.png"></a>
+              <a href="http://www.easywebshop.com/pure-essence"><img alt="webshop" src="logos/Webshop.png"></a>
             </li>
 
           </ul>
       </nav>
     </header>
 
+
+
+
+
+
+
+
+
+
+
+
+
     <main>
       <div class="achtergrond">
         <div class="text">
-          <p>
-            Welkom op de website van Pure Essence.
-            <br>
-            <br>
-            <br>
-            <br>
-            Kom genieten van de pure natuur in al haar weelderigheid en <br>
-            creëer zo zelf een mooie balans tussen jouw innerlijke en uiterlijke schoonheid.<br>
-            <br>
-            Ik adem in en kom tot rust,<br>
-            ik adem uit en ik glimlach.<br>
-            Thuis gekomen in het nu<br>
-            wordt dit moment een wonder.<br>
-            <br>
-            <br>
-            Mijn naam is Tanja en ik neem je graag mee naar de wondere wereld van de 5 elementen:<br>
-            hout, vuur, aarde, metaal en water.<br>
-            De natuurlijke, actieve en energetische producten van Phyto 5 die ik bij de verzorgingen gebruik, zijn gebaseerd op de eeuwenoude kennis van de Chinese geneeskunde.<br>
-            Alle 5 de elementen hebben hun eigen werking. Is een element uit evenwicht, kan je het terug aanvullen dankzij de kracht van de andere elementen en zo kom je weer helemaal in <br>harmonie.<br>
-            <br>
-            Om jou de optimale verzorging te kunnen bieden, werk ik vanuit mijn gevoel en hart. Het enige dat jij hoeft te doen is een afspraak maken en doorgeven hoeveel tijd je wilt <br>komen genieten. Op het moment van de afspraak bekijken we samen welke verzorging op dat moment het beste in jou naar boven haalt. Het ene moment kan dat een drainage zijn <br>waardoor je lymfesysteem beter zal gaan werken, het andere moment heeft je huid misschien meer nood aan een diepe reiniging of juist vooral ontspanning.<br>
-            <br>
-            De natuur, gezondheid en een goede balans tussen lichaam en geest staan bij mij centraal. <br>
-            Op verschillende manieren help ik jou om deze balans te zoeken.<br>
-            Tijdens de behandelingen in mijn praktijk maak ik gebruik van chromatherapie. Dankzij de helende kracht van deze zuivere lichtstralen, behandel ik met gekleurd licht bepaalde <br>reflex- en acupunctuurpunten. <br>
-            Chromatherapie werkt ondersteunend en brengt zo verbetering in de elasticiteit van de huid. De energiecentra die zich in ons lichaam bevinden, worden op die manier gezuiverd <br>en versterkt.<br>
-            <br>
-            In combinatie met de Biodrainer, worden alle afvalstoffen sneller uit het lichaam gevoerd. <br>
-            Dit resulteert in een betere werking van zowel lichaam als geest. <br>
-            Je zal stralen als nooit ervoor en bruisen van energie!<br>
-            <br>
-            Ook de innerlijke schoonheid krijgt aandacht. <br>
-            Bij mijn yogalessen gaan we verder met het ontwikkelen en behouden van een balans tussen lichaam en geest, tussen inspanning en ontspanning.
-          </p>
+          
+            <h1>Welkom op de website van Pure Essence.</h1>
+            
+                <div>
+                    <p class="alinea_1">
+                        Kom genieten van de pure natuur in al haar weelderigheid en <br>
+                        creëer zo zelf een mooie balans tussen jouw innerlijke en uiterlijke schoonheid.<br>
+                        <br>
+                        Ik adem in en kom tot rust,<br>
+                        ik adem uit en ik glimlach.<br>
+                        Thuis gekomen in het nu<br>
+                        wordt dit moment een wonder.<br>
+                        <br>
+                        <br>
+                        Mijn naam is Tanja en ik neem je graag mee naar de wondere wereld van ontspanning en innerlijke rust<br>
+                        De natuur, gezondheid en een goede balans tussen lichaam en geest staan bij mij centraal. <br>
+                        Op verschillende manieren help ik jou om deze balans te zoeken.<br>
+                        Zowel de uiterlijke als de innerlijke schoonheid krijgen aandacht. <br>
+                        Bij mijn yogalessen gaan we verder met het ontwikkelen en behouden van een balans tussen lichaam
+                        en geest, tussen inspanning en ontspanning.<br>
+                    </p>
+                </div>
+                     
+          <div><img class="Yoga_Tanja_Nica" src="fotos/Yoga_Tanja_Nica.jpg" alt="Yoga with beach vieuw"></div>
           <br>
-          <br>
-          <img class="Yoga_Tanja_Nica" src="fotos/Yoga_Tanja_Nica.jpg">
-          <br>
-          <a  href="http://pure-essence.us7.list-manage.com/subscribe?u=c6c6d752dbec2f76cb4c32b55&id=8aa42138ad"><img class="button" src="logos/button_inschrijven.png"></a>
+
+
+          <div class="cat_1">   <!--newsletter-->
+            <h2> Nieuws brief</h2>
+            <p>Wil je op de hoogte blijven van onze aanbiedingen meld u dan snel aan op onze nieuwsbrief!<br><br><br>
+                <a class="link_bottom"href="http://pure-essence.us7.list-manage.com/subscribe?u=c6c6d752dbec2f76cb4c32b55&id=8aa42138ad">newsletter</a>
+            </p>
+          </div>
+
+
+          <div class="cat_2">   <!--Facebook-->
+            <h2>Facebook</h2>
+            <p>Wij zijn ook actief op facebook dus neem ook gerust een kijkje op onze Facebookpagina!<br><br><br>
+                <a class="link_bottom"href="https://www.facebook.com/pages/Pure-Essence/298148490859">Facebook</a>
+            </p>
+          </div>
+
+
+          <div class="cat_3">   <!--Instagram-->
+            <h2>Instagram</h2>
+            <p>Bekijk onze laatse Instagram posts hier!<br><br><br><br>
+                <a class="link_bottom"href="https://instagram.com/pureessencelier/">Instagram</a>
+            </p>
+          </div>
+        
         </div>
       </div>
     </main>
 
 
     <footer>
-        <a target="_blank" class="fb" href="https://www.facebook.com/pages/Pure-Essence/298148490859?ref=ts&fref=ts"><img src="logos/facebook.png"></a>
+        <a target="_blank" class="fb" href="https://www.facebook.com/pages/Pure-Essence/298148490859?ref=ts&fref=ts"><img alt="logo_facebook" src="logos/facebook.png"></a>
         
         <!--dislplay: none at the moment -->
-        <a target="_blank" class="instagram" href="https://instagram.com/tomdebr/"><img src="logos/instagram.png"></a>
+        <a target="_blank" class="instagram" href="https://instagram.com/tomdebr/"><img alt="logo_instagram" src="logos/instagram.png"></a>
         <!--display back okey-->
 
         <p class="rights">All rights reserved by Tom De Bruyn</p>

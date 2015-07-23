@@ -22,7 +22,7 @@ body{
 										
 															/* Navigatie */
 nav{
-	margin: 4% auto 4% auto;
+	margin: 2% auto 2% auto;
 	text-align: center;
 	font-size: 1.3em;
 }
@@ -75,24 +75,77 @@ nav{
 }
 															/* main menu */
  .achtergrond{
- 	 	background-color: rgba(235, 245, 200, 0.8);
+ 	 	background-color: rgba(235, 245, 200, 0.7);
  }
 
  .text{
- 	text-align: center;
- 	width: 50%;
- 	margin:4% auto;
- 	padding: 3% 10% 3% 10%;
  	color:rgb(107,65,9);
+ 	overflow: auto;
+ 	clear: both;
  }
 
-.Yoga_Tanja_Nica{
-	width: 50%;
+h1{
+	font-size: 2em;
+ 	padding: 3% 10% 3% 10%;
+ 	margin:auto;
+ 	text-align: center;
 }
 
-.button{
-	margin-top: 4%;
+.alinea_1{
+	text-align: left;
+ 	overflow: auto;
+ 	float: left;
+ 	clear: both;
+ 	width: 50%;
+ 	margin: 10% 2% 2% 2%;
+ 	padding: 1%;
+}
+
+.Yoga_Tanja_Nica{
+	width: 30%;
+	overflow: auto;
+	float: right;
+	margin: 2%;
+}
+
+h2{
+	font-size: 1.5em;
+	padding-bottom: 8%
+}
+
+.cat_1{
+	width: 16%;
+	float: left;
+	overflow: auto;
 	clear: both;
+	margin: 2% 5% 2% 10%;
+	padding: 2%;
+	background-color:#FFF4AE;
+}
+
+.cat_2{
+	width: 16%;
+	float: left;
+	overflow: auto;
+	margin: 2% 5% 2% 5%;
+	padding: 2%;
+	background-color:#FFF4AE;
+}
+
+.cat_3{
+	width: 16%;
+	float: left;
+	overflow: auto;
+	margin: 2% 10% 2% 5%;
+	padding: 2%;
+	background-color:#FFF4AE;
+}
+
+.link_bottom{
+	text-decoration: none;
+	background-color: black;
+	color: white;
+	padding: 5%;
 }
 
 															/* facebook */
